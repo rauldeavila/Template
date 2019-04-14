@@ -1,0 +1,30 @@
+:root {
+  --primary-color: rgb(133, 220, 241);
+  --secondary-color: rgb(247, 176, 209);
+  --font-color: rgb(34, 45, 45);
+}
+
+.darkMode {
+  --font-color: rgb(255, 255, 255);
+  --primary-color: #000000;
+  --secondary-color: #233442;
+}
+
+body {
+  font-family: Roboto;
+  background: var(--secondary-color);  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, var(--primary-color), var(--secondary-color));  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, var(--primary-color), var(--secondary-color)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#themeBtn {
+  color: var(--font-color);
+  background-color: var(--background-color);
+  border: 3px solid  rgba(0, 0, 0, 0);
+  font-size: 15px;
+  outline: none;
+}
+
+.fa-lightbulb {
+  font-size: 40px;
+}
